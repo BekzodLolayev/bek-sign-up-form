@@ -17,7 +17,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -33,58 +33,48 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1440px;
-  height: 800px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* MAIN-CONTENT */
-.main-content {
-  flex-grow: 1;
+  height: 100%;
+  background-color: #f1f4ff;
 }
 
 .container-inside {
-  padding-top: 100px;
+  width: 1470px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 144px;
   display: flex;
 }
 .container-left {
   padding: 0;
   margin: 0;
-  width: 888px;
-  height: 854px;
-}
-.apple-logo {
-  width: 150px;
-  height: 170px;
-  color: #333;
-  padding: 0;
-  margin: 0;
-  margin-top: 50px;
-  margin-left: 190px;
-}
-.apple-h2 {
-  font-family: Roboto, "Arial", sans-serif;
-  font-size: 100px;
-  line-height: 120px;
-  margin: 0;
-  padding: 0;
-  color: #000;
-  text-align: center;
-}
-.watch-h2 {
-  font-family: Roboto, "Arial", sans-serif;
-  font-size: 100px;
-  line-height: 120px;
-  margin: 0;
-  padding: 0;
-  color: #ea625c;
-  text-align: center;
+  margin-right: 12px;
+  width: 570px;
+  height: 640px;
+  border-radius: 20px;
+  background-image: url("../img/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .container-right {
-  width: 888px;
-  height: 854px;
+  padding: 0;
+  margin: 0;
+  width: 570px;
+  height: 640px;
+  border-radius: 20px;
+  background-color: #fff;
 }
+
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .container-left {
+    background-image: url("../img/Rectangle@2x.jpg");
+  }
