@@ -78,3 +78,4 @@ only screen and (                min-resolution: 2dppx) {
   .container-left {
     background-image: url("../img/Rectangle@2x.jpg");
   }
+}
