@@ -109,10 +109,10 @@ img {
   color: #fff;
   text-align: center;
 }
-.container-left-bottom-text span {
-  font-weight: normal;
-}
 
+input:focus{
+  outline: none;
+}
 .container-right {
   padding: 55px 60px 40px 60px;
   margin: 0;
